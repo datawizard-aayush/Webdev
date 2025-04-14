@@ -1,0 +1,240 @@
+/* Periodic table gridding */
+.table
+{
+display: grid;
+grid-template-columns: repeat(18,1fr);
+gap: 5px;
+
+}
+/* Buttons modifications */
+.Element
+{
+        width: 60px !important;
+        height: 60px !important;
+        border: 1.5px solid orange !important;
+        background-color: yellow !important;
+        font-size:14px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 5px;
+        
+}
+.Element::before
+{
+content:""
+background linear-gradient(
+45 deg,
+#FF0000,#FF7300,#FFFB00,#48FF00
+);
+width:calc(100% + 4px);
+height:calc(100%+ 4px);
+}
+.empty {
+    width: 20px;
+    height: 20px;
+}
+.Lanthanidesbutton
+{
+        width: 80px !important;
+        height: 60px !important;
+        border: 1.5px solid orange !important;
+        background-color: 	#FF1493 !important;
+        font-size:13.5px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 5px;
+        
+}
+.Actinidesbutton
+{
+        width: 80px !important;
+        height: 60px !important;
+        border: 1.5px solid orange !important;
+        background-color: 	#9400D3 !important;
+        font-size:18.5 px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 5px;
+
+}
+.Lanthanides    
+{
+        width: 60px !important;
+        height: 60px !important;
+        border: 1.5px solid orange !important;
+        background-color: 	#FF1493 !important;
+        font-size:14px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 5px;
+        
+}
+.Actinides
+{
+        width: 60px !important;
+        height: 60px !important;
+        border: 1.5px solid orange !important;
+        background-color: 	#9400D3 !important;
+        font-size:14px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 5px;
+        
+}
+.Noble
+{
+        width: 60px !important;
+        height: 60px !important;
+        border: 1.5px solid orange !important;
+        background-color: aqua !important;
+        font-size:14px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 5px;
+        
+}
+.Halogens
+{
+        width: 60px !important;
+        height: 60px !important;
+        border: 1.5px solid orange !important;
+        background-color: #00FF00 !important;
+        font-size:14px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 5px;
+        
+}
+.Transition
+{
+    width: 60px !important;
+    height: 60px !important;
+    border: 1.5px solid orange !important;
+    background-color: 	#4171ffd7 !important;
+    font-size:14px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.Alkaline_earth
+{
+    width: 60px !important;
+    height: 60px !important;
+    border: 1.5px solid orange !important;
+    background-color: 	#F4A460 !important;
+    font-size:14px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.Non_metals
+{
+    width: 60px !important;
+    height: 60px !important;
+    border: 1.5px solid orange !important;
+    background-color: #A52A2A !important;
+    font-size:14px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.p_metals
+{
+    width: 60px !important;
+    height: 60px !important;
+    border: 1.5px solid orange !important;
+    background-color: lightblue !important;
+    font-size:14px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.Metalloids
+{
+    width: 60px !important;
+    height: 60px !important;
+    border: 1.5px solid orange !important;
+    background-color: olive !important;
+    font-size:14px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.Chalcogens
+{
+    width: 60px !important;
+    height: 60px !important;
+    border: 1.5px solid red !important;
+    background-color: orange !important;
+    font-size:14px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#info-box {
+    position: fixed;
+    top: 50 px;
+    right: 600px;
+    width: 500px;
+    max-height: 100px;
+    overflow-y: auto;
+    background-color: #1a1a1a;
+    color: white;
+    border: 2px solid #444;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+    z-index: 9999;
+    display: none;
+  }
+  
+  #info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #element-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  #element-title {
+    margin: 0;
+    font-size: 18px;
+    color: #ffd700;
+  }
+  
+  #element-summary {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  
+  #element-link {
+    color: #4fc3f7;
+    font-size: 13px;
+    text-decoration: underline;
+  }
+  
+  #element-link:hover {
+    color: #80d8ff;
+  }
