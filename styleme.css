@@ -1,0 +1,26 @@
+
+h1
+{
+    color: yellow;
+    font-size: 45px;
+}
+body {
+    text-align: center;
+    background-color: blue;
+    font-family: sans-serif;
+}
+
+.marquee-style {
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+marquee img {
+    width: 350px;
+    height: 350px;
+    margin-right: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
