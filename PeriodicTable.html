@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Periodic table 🧑‍🔬</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pt.css">
+  <link rel="ico" href="favicon.ico">
+  <style>
+    .Transition {
+      width: 60px !important;
+      height: 60px !important;
+      border: 1.5px solid orange !important;
+      background-color: #0000ff !important;
+      font-size:14px;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body bgcolor="black">
+  <p style="color:white; font-size:30px; text-align:center">
+    <b>MODERN PERIODIC TABLE</b>
+  </p>
+  <div class="table">
+    <div id="info-box" style="color:white; padding: 20px; background:#111; margin-top: 20px; border: 2px solid #555; border-radius: 10px; display:none;">
+        <h2 id="element-title"></h2>
+        <p id="element-summary"></p>
+        <a id="element-link" href="#" target="_blank" style="color:lightblue;">Read more on Wikipedia</a>
+      </div>
+    <button class="Non_metals hydrogen">1.<br>H</button>
+    <!-- 16 Empty spaces -->
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <button class="Noble Helium">2.<br>He</button>
+    <button class="Element Lithium">3.<br>Li</button>
+    <button class="Alkaline_earth Berylium">4. <br>Be</button>
+    <!-- 10 Empty spaces -->
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <button class="Metalloids Boron">5. <br>Bo</button>
+    <button class="Non_metals Carbon">6. <br>C</button>
+    <button class="Non_metals Nitrogen">7.<br>N</button>
+    <button class="Chalcogens Oxygen">8. <br>O</button>
+    <button class="Halogens Flourine">9. <br>F</button>
+    <button class="Noble Neon">10. <br>Ne</button>
+    <button class="Element Sodium">11. <br>Na</button>
+    <button class="Alkaline_earth Magnesium">12. <br>Mg</button>
+    <!-- 16 Empty spaces -->
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <button class="p_metals Aluminum">13. <br>Al</button>
+    <button class="Metalloids Silicon">14. <br>Si</button>
+    <button class="Non_metals Phosphorus">15. <br>P</button>
+    <button class="Chalcogens Sulphur">16. <br>S</button>
+    <button class="Halogens Chlorine">17. <br>Cl</button>
+    <button class="Noble Argon">18. <br>Ar</button>
+    <button class="Element Potasium">19. <br>K</button>
+    <button class="Alkaline_earth Calcium">20. <br>Ca</button>
+    <button class="Transition Scandium">21. <br>Sc</button>
+    <button class="Transition Titanium">22. <br>Ti</button>
+    <button class="Transition Vanadium">23. <br>V</button>
+    <button class="Transition Chromium">24. <br>Cr</button>
+    <button class="Transition Manganese">25. <br>Mn</button>
+    <button class="Transition Iron">26. <br>Fe</button>
+    <button class="Transition Cobalt">27. <br>Co</button>
+    <button class="Transition Nickel">28. <br>Ni</button>
+    <button class="Transition Copper">29. <br>Cu</button>
+    <button class="Transition Zinc">30. <br>Zn</button>
+    <button class="p_metals Gallium">31. <br>Ga</button>
+    <button class="Metalloids Germanium">32. <br>Ge</button>
+    <button class="Metalloids Arsenic">33. <br>As</button>
+    <button class="Chalcogens Selenium">34. <br>Se</button>
+    <button class="Halogens Bromine">35. <br>Br</button>
+    <button class="Noble Krypton">36. <br>Kr</button>
+    <button class="Element Rubidium">37.<br>Rb</button>
+    <button class="Alkaline_earth Strontium">38.<br>Sr</button>
+    <button class="Transition Yttrium">39.<br>Y</button>
+    <button class="Transition Zirconium">40.<br>Zr</button>
+    <button class="Transition Niobium">41.<br>Nb</button>
+    <button class="Transition Molybdenum">42.<br>Mo</button>
+    <button class="Transition Technetium">43.<br>Tc</button>
+    <button class="Transition Ruthenium">44.<br>Ru</button>
+    <button class="Transition Rhodium">45.<br>Rh</button>
+    <button class="Transition Palladium">46.<br>Pd</button>
+    <button class="Transition Silver">47.<br>Ag</button>
+    <button class="Transition Cadmium">48.<br>Cd</button>
+    <button class="p_metals Indium">49.<br>In</button>
+    <button class="p_metals Tin">50.<br>Sn</button>
+    <button class="Metalloids Antimony">51.<br>Sb</button>
+    <button class="Metalloids Tellurium">52.<br>Te</button>
+    <button class="Halogens Iodine">53.<br>I</button>
+    <button class="Noble Xenon">54.<br>Xe</button>
+    <button class="Element Caesium">55.<br>Cs</button>
+    <button class="Alkaline_earth Barium">56.<br>Ba</button>
+    <button class="Lanthanidesbutton">57 to 71 <br> Lanthanides </button>
+    <button class="Transition Hafnium">72 <br> Hf</button>
+    <button class="Transition Tantalum">73.<br>Ta</button>
+    <button class="Transition Tungsten">74.<br>W</button>
+    <button class="Transition Rhenium">75.<br>Re</button>
+    <button class="Transition Osmium">76.<br>Os</button>
+    <button class="Transition Iridium">77.<br>Ir</button>
+    <button class="Transition Platinum">78.<br>Pt</button>
+    <button class="Transition Gold">79.<br>Au</button>
+    <button class="Transition Mercury">80.<br>Hg</button>
+    <button class="p_metals Thallium">81.<br>Tl</button>
+    <button class="p_metals Lead">82.<br>Pb</button>
+    <button class="p_metals Bismuth">83.<br>Bi</button>
+    <button class="Chalcogens Polonium">☢️84.<br>Po</button>
+    <button class="Halogens Astatine">☢️85.<br>At</button>
+    <button class="Noble Radon">☢️86.<br>Rn</button>
+    <button class="Element Francium">☢️87.<br>Fr</button>
+    <button class="Alkaline_earth Radium">☢️88.<br>Ra</button>
+    <button class="Actinidesbutton">89 to 103<br>Actinides</button>
+    <button class="Transition Rutherfordium">☢️104.<br>Rf</button>
+    <button class="Transition Dubnium">☢️105.<br>Db</button>
+    <button class="Transition Seaborgium">☢️106.<br>Sg</button>
+    <button class="Transition Bohrium">☢️107.<br>Bh</button>
+    <button class="Transition Hassium">☢️108.<br>Hs</button>
+    <button class="Transition Meitnerium">☢️109.<br>Mt</button>
+    <button class="Transition Darmstadtium">☢️110.<br>Ds</button>
+    <button class="Transition Roentgenium">☢️111.<br>Rg</button>
+    <button class="Transition Copernicium">☢️112.<br>Cn</button>
+    <button class="p_metals Nihonium">☢️113.<br>Nh</button>
+    <button class="p_metals Flerovium">☢️114.<br>Fl</button>
+    <button class="p_metals Moscovium">☢️115.<br>Mc</button>
+    <button class="p_metals Livermorium">☢️116.<br>Lv</button>
+    <button class="Halogens Tennessine">☢️117.<br>Ts</button>
+    <button class="Noble Oganesson">☢️118.<br>Og</button>
+    <!--More empty spaces-->
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="empty"></div>
+    <!--Lanthanides-->
+    <button class="Lanthanides Lanthanum">57.<br>La</button>
+    <button class="Lanthanides Cerium">58.<br>Ce</button>
+    <button class="Lanthanides Praseodymium">59.<br>Pr</button>
+    <button class="Lanthanides Neodymium">60.<br>Nd</button>
+    <button class="Lanthanides Promethium">61.<br>Pm</button>
+    <button class="Lanthanides Samarium">62.<br>Sm</button>
+    <button class="Lanthanides Europium">63.<br>Eu</button>
+    <button class="Lanthanides Gadolinium">64.<br>Gd</button>
+    <button class="Lanthanides Terbium">65.<br>Tb</button>
+    <button class="Lanthanides Dysprosium">66.<br>Dy</button>
+    <button class="Lanthanides Holmium">67.<br>Ho</button>
+    <button class="Lanthanides Erbium">68.<br>Er</button>
+    <button class="Lanthanides Thulium">69.<br>Tm</button>
+    <button class="Lanthanides Ytterbium">70.<br>Yb</button>
+    <button class="Lanthanides Lutetium">71.<br>Lu</button>
+    <!--Extra empty spaces needed-->
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <!-- Actinides -->
+    <button class="Actinides Actinuim">☢️89.<br>Ac</button>
+    <button class="Actinides Thorium">☢️90.<br>Th</button>
+    <button class="Actinides Protactinium">☢️91.<br>Pa</button>
+    <button class="Actinides Uranium">☢️92.<br>U</button>
+    <button class="Actinides Neptunium">☢️93.<br>Np</button>
+    <button class="Actinides Plutonium">☢️94.<br>Pu</button>
+    <button class="Actinides Americium">☢️95.<br>Am</button>
+    <button class="Actinides Curium">☢️96.<br>Cm</button>
+    <button class="Actinides Berkelium">☢️97.<br>Bk</button>
+    <button class="Actinides Californium">☢️98.<br>Cf</button>
+    <button class="Actinides Einsteinium">☢️99.<br>Es</button>
+    <button class="Actinides Fermium">☢️100.<br>Fm</button>
+    <button class="Actinides Mendelevium">☢️101.<br>Md</button>
+    <button class="Actinides Nobelium">☢️102.<br>No</button>
+    <button class="Actinides Lawrencium">☢️103.<br>Lr</button>
+  </div>
+  <div id="info-box">
+    <div id="info-content">
+      <img id="element-image" src="" alt="Element Image">
+      <div>
+        <h3 id="element-title"></h3>
+        <p id="element-summary"></p>
+        <a id="element-link" href="#" target="_blank">Read more on Wikipedia</a>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    async function fetchElementInfo(elementName) {
+      const response = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${elementName}`);
+      const data = await response.json();
+  
+      if (data.extract) {
+        document.getElementById("element-title").textContent = data.title;
+        document.getElementById("element-summary").textContent = data.extract;
+        document.getElementById("element-link").href = data.content_urls.desktop.page;
+        document.getElementById("element-image").src = data.thumbnail?.source || "";
+        document.getElementById("element-image").style.display = data.thumbnail ? "block" : "none";
+        document.getElementById("info-box").style.display = "block";
+      } else {
+        document.getElementById("element-title").textContent = "Not found";
+        document.getElementById("element-summary").textContent = "No information found on Wikipedia.";
+        document.getElementById("element-link").href = "#";
+        document.getElementById("element-image").style.display = "none";
+        document.getElementById("info-box").style.display = "block";
+      }
+    }
+  
+    document.querySelectorAll(".table button").forEach(button => {
+      button.addEventListener("click", () => {
+        const skip = ["Element", "Alkaline_earth", "Transition", "Non_metals", "Chalcogens", "Halogens", "Noble", "Metalloids", "p_metals", "Lanthanides", "Actinides", "Lanthanidesbutton", "Actinidesbutton"];
+        const classes = Array.from(button.classList);
+        const elementClass = classes.find(c => !skip.includes(c));
+  
+        if (elementClass) {
+          fetchElementInfo(elementClass);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
